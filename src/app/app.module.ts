@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
 import { UnitWizardComponent } from './unit-wizard/unit-wizard.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { UnitFormComponent } from './admin/unit-form/unit-form.component';
 
 
 
@@ -21,7 +22,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
     HomeComponent,
     ProfileComponent,
     UnitWizardComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    UnitFormComponent
 
   ],
   imports: [
