@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body ng-app="">
+
+<div class="unitWizard">
+
+<form>
+  Pick a bachelor:
+  <input type="radio" ng-model="bach" value="bict">BICT
+  <input type="radio" ng-model="bach" value="mits">MITS
+</form>
+<form>
+        Pick a major:
+        <input type="radio" ng-model="major" value="ba">Business Analysis
+        <input type="radio" ng-model="major" value="cs">Cyber Security
+        <input type="radio" ng-model="major" value="da">Data Science
+        <input type="radio" ng-model="major" value="gt">Games and Creative Technology
+        <input type="radio" ng-model="major" value="sd">Software Development
+      </form>
+
+      <p>Year 1 - Semester 1</p>
+      
+      <form>
+            Pick a manditory  units:
+            <input type="radio" ng-model="sem1" value="107">KIT107 - Programming
+            <input type="radio" ng-model="sem1" value="B101">BMA101 - Intro to Managment
+            <input type="radio" ng-model="sem1" value="101">KIT101 - Programming Fundamentals
+            <input type="radio" ng-model="sem1" value="103">KIT103 - Computational Sciences
+          </form>
+
+          <p>Year 1 - Semester 2</p>
+
+          <form>
+                Pick a manditory  units:
+                <input type="radio" ng-model="sem2" value="102">KIT102 - Introduction to Data Science
+                <input type="radio" ng-model="sem2" value="111">KIT111 - Data Network and Security
+                <input type="radio" ng-model="sem2" value="105">KIT105 - ICT Proffessional Practices
+                <input type="radio" ng-model="sem2" value="107">KIT107 - Programming
+              </form>
+</div>
+
+<div class="display">
+
+<div ng-switch="bach">
+  <div ng-switch-when="bict">
+     <h1>BICT</h1>
+  </div>
+  <div ng-switch-when="mits">
+     <h1>MITS</h1>
+  </div>
+</div>
+
+<div ng-switch="major">
+        <div ng-switch-when="ba">
+           <h1>Business Analysis</h1>
+        </div>
+        <div ng-switch-when="cs">
+           <h1>Cyber Security</h1>
+        </div>
+        <div ng-switch-when="da">
+                <h1>Data Science</h1>
+             </div>
+             <div ng-switch-when="gt">
+                    <h1>Games and Creative Technology</h1>
+                 </div>
+                 <div ng-switch-when="sd">
+                        <h1>Software Development</h1>
+                     </div>
+
+                     <div ng-switch="sem1">
+                            <div ng-switch-when="107">
+                               <h1>KIT107 - Programming</h1>
+                            </div>
+                            <div ng-switch-when="B101">
+                               <h1>BMA101 - Intro to Managment</h1>
+                            </div>
+                            <div ng-switch-when="101">
+                                    <h1>KIT101 - Programming Fundamentals</h1>
+                                 </div>
+                                 <div ng-switch-when="103">
+                                        <h1>KIT103 - Computational Sciences</h1>
+                                     </div>
+
+
+                                     <div ng-switch="sem2">
+                                            <div ng-switch-when="102">
+                                               <h1>KIT102 - Introduction to Data Science</h1>
+                                            </div>
+                                            <div ng-switch-when="111">
+                                               <h1>KIT111 - Data Network and Security</h1>
+                                            </div>
+                                            <div ng-switch-when="105">
+                                                    <h1>KIT105 - ICT Proffessional Practices</h1>
+                                                 </div>
+                                                 <div ng-switch-when="107">
+                                                        <h1> KIT107 - Programming</h1>
+                                                     </div>
+                                    
+        
+      </div>
+
+
+</div>
+
+</body>
+</html>
