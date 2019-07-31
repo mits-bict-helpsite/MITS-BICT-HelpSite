@@ -1,0 +1,15 @@
+.home_container {
+    margin: auto;
+    width: 80%;
+    margin-top: 100px;
+    border: 1px solid black;
+    min-height: 700px;
+}
+
+p {
+    padding: 0px 20px;
+}
+
+h1 {
+    text-align: center;
+}

@@ -1,0 +1,32 @@
+.header-navbar{
+    border-bottom: 1px solid black;
+}
+
+.header-navbar ul{
+    
+    display: inline;
+}
+
+.header-navbar li {
+    display: inline;
+}
+
+.header-navbar form {
+    /* display: inline-block; */
+    float: right;
+    overflow: auto;
+
+}
+
+.header-navbar a {
+    font-size: 1.3em;
+    font-weight: lighter;
+    display: inline-block;
+    padding: .3em;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.header-navbar a:hover {
+    background-color: rgba(255, 0, 0, 0.1);
+}

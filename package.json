@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --prod --output-path dist --base-href /MITS-BICT-HelpSite/ ",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
@@ -58,5 +58,5 @@
   "bugs": {
     "url": "https://github.com/mits-bict-helpsite/MITS-BICT-HelpSite/issues"
   },
-  "homepage": "https://github.com/mits-bict-helpsite/HelpSite"
+  "homepage": "https://mits-bict-helpsite.github.io"
 }
